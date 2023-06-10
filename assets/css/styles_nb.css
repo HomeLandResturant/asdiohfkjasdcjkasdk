@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: #101010;
+    }
+
+
+    .logo {
+        cursor: pointer;
+    }
+
+    .nav__links a,
+    .cta,
+    .overlay__content a {
+        font-family: "Sono", sans-serif;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav__links {
+        list-style: none;
+        display: flex;
+    }
+
+        .nav__links li {
+            padding: 0px 20px;
+        }
+
+            .nav__links li a {
+                transition: color 0.3s ease 0s;
+            }
+
+                .nav__links li a:hover {
+                    color: #6699FF;
+                }
+
+
+.nav-active:after {
+    background: #6699ff;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.nav-item:after {
+    content: "";
+    height: 1px;
+    bottom: 5px;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    background: #101010;
+}
+
+    .cta {
+        padding: 9px 25px;
+        background-color: #6699FF;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease 0s;
+    }
+
+        .cta:hover {
+            background-color: rgba(0, 136, 169, 0.8);
+        }
